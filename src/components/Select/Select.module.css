@@ -1,0 +1,13 @@
+.field { display: flex; flex-direction: column; gap: var(--space-2); width: 100%; }
+.label { font-size: 13px; font-weight: 500; }
+.wrap { position: relative; }
+.select {
+  appearance: none; width: 100%; padding: 10px 36px 10px 12px;
+  border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg);
+  color: var(--color-text);
+}
+.selectEmpty { color: var(--color-text-subtle); }
+.select:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(94,114,228,.15); }
+.selectError { border-color: var(--color-danger); }
+.chev { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--color-text-muted); pointer-events: none; }
+.error { color: var(--color-danger); font-size: 12px; }

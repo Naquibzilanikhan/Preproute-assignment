@@ -1,0 +1,21 @@
+.group { border: 0; padding: 0; margin: 0; }
+.legend { font-size: 13px; color: var(--color-text); margin-bottom: var(--space-3); font-weight: 500; }
+.list { display: flex; gap: var(--space-6); flex-wrap: wrap; }
+.list[data-columns="2"] { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4) var(--space-6); }
+.list[data-columns="3"] { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4) var(--space-6); }
+.item {
+  display: inline-flex; align-items: center; gap: var(--space-3);
+  cursor: pointer; user-select: none; font-size: 14px; position: relative;
+}
+.input { position: absolute; opacity: 0; pointer-events: none; }
+.dot {
+  width: 18px; height: 18px; border-radius: 50%;
+  border: 1.5px solid var(--color-border-strong);
+  display: inline-block; position: relative; transition: border-color .15s;
+  flex-shrink: 0;
+}
+.item:hover .dot { border-color: var(--color-primary); }
+.itemChecked .dot { border-color: var(--color-primary); }
+.itemChecked .dot::after {
+  content: ''; position: absolute; inset: 3px; border-radius: 50%; background: var(--color-primary);
+}

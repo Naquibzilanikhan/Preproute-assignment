@@ -1,0 +1,23 @@
+.page { display: flex; flex-direction: column; gap: var(--space-5); }
+.qHead {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: var(--space-4);
+}
+.qTitle { font-size: 16px; font-weight: 600; color: var(--color-primary); }
+.qActions { display: flex; gap: var(--space-3); }
+.pager {
+  display: flex; justify-content: center;
+  gap: var(--space-6); margin-top: var(--space-4);
+}
+.pagerBtn {
+  width: 32px; height: 32px; border-radius: 50%;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  display: grid; place-items: center;
+}
+.pagerBtn:disabled { opacity: .4; cursor: not-allowed; }
+.footer {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: var(--space-6); padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}

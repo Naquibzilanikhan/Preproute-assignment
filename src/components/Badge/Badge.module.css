@@ -1,0 +1,11 @@
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: var(--radius-pill);
+  font-size: 12px; font-weight: 600;
+}
+.neutral { background: var(--color-bg-muted); color: var(--color-text); }
+.primaryDark { background: var(--color-badge-chapter-bg); color: #fff; }
+.easy { background: var(--color-badge-easy-bg); color: #fff; }
+.medium { background: var(--color-warn); color: #fff; }
+.difficult { background: var(--color-danger); color: #fff; }
+.success { background: var(--color-success-soft); color: var(--color-success); }

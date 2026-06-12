@@ -1,0 +1,36 @@
+.field {
+  position: relative;
+  display: flex; flex-direction: column;
+  gap: var(--space-2);
+}
+.label { font-size: 13px; font-weight: 500; }
+.trigger {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  width: 100%;
+}
+.triggerError { border-color: var(--color-danger); }
+.placeholder { color: var(--color-text-subtle); }
+.value { color: var(--color-text); }
+.list {
+  position: absolute;
+  top: calc(100% + 6px); left: 0; right: 0;
+  max-height: 220px; overflow: auto;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-pop);
+  z-index: 20;
+}
+.opt {
+  display: block; width: 100%;
+  text-align: left; padding: 8px 12px;
+  font-size: 14px;
+}
+.opt:hover { background: var(--color-bg-muted); }
+.optActive { background: var(--color-primary-soft); color: var(--color-primary); }
+.error { color: var(--color-danger); font-size: 12px; }

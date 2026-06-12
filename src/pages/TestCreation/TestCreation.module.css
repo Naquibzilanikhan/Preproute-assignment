@@ -1,0 +1,17 @@
+.page { display: flex; flex-direction: column; gap: var(--space-5); }
+.tabs {
+  display: flex; gap: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+.tab {
+  padding: var(--space-3) var(--space-2);
+  color: var(--color-text-muted); font-size: 14px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+.tabActive {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  font-weight: 600;
+}
+.body { padding: var(--space-5) 0; }

@@ -1,0 +1,16 @@
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+  border-radius: var(--radius-md); padding: 10px 18px; font-weight: 500; transition: filter .15s;
+  border: 1px solid transparent;
+}
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+.btn:not(:disabled):hover { filter: brightness(.95); }
+
+.primary { background: var(--color-primary); color: #fff; }
+.secondary { background: var(--color-primary-soft); color: var(--color-primary); }
+.ghost { background: transparent; color: var(--color-text); }
+.danger { background: transparent; color: var(--color-danger); }
+
+.sm { padding: 6px 12px; font-size: 13px; }
+.md { padding: 10px 18px; font-size: 14px; }
+.lg { padding: 12px 24px; font-size: 15px; width: 100%; }
